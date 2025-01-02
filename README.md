@@ -35,6 +35,7 @@ module "vpc" {
     public_sub2 = {
       cidr_block = "10.0.2.0/24"
       availability_zone = "us-east-1b"
+      # To set the subnet as public, default is private
       public = true
     }
     private_sub3 = {
